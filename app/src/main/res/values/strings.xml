@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Call Cat</string>
+    <string name="btnSonido">Llamar</string>
+    <string name="labelUno">Llama a tu gato!</string>
+</resources>
