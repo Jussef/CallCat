@@ -1,4 +1,4 @@
-package com.example.callcat
+package com.callcat.callcat
 
 import org.junit.Test
 

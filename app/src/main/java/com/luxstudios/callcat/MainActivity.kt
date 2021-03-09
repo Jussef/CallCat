@@ -1,14 +1,23 @@
-package com.example.callcat
+package com.luxstudios.callcat
 
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds;
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
+
+
     val mp = MediaPlayer();
     var mMediaPlayer: MediaPlayer? = null
+    lateinit var mAdView : AdView
 
     // 1. Plays the water sound
     fun playSound(view: View) {
@@ -47,5 +56,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        MobileAds.initialize(this,getString(R.string.admob_app_id))
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+
+        val adView = AdView(this)
+        adView.adSize = AdSize.BANNER
+        adView.adUnitId = "ca-app-pub-1174926561998110/6432849085"
+
+
+
+
     }
 }

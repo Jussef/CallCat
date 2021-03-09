@@ -2,4 +2,6 @@
     <string name="app_name">Call Cat</string>
     <string name="btnSonido">Llamar</string>
     <string name="labelUno">Llama a tu gato!</string>
+    <string name="admob_app_id">ca-app-pub-1174926561998110~7256359055</string>
+    <string name="admob_banner_ad">ca-app-pub-1174926561998110/6432849085</string>
 </resources>
